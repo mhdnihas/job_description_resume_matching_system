@@ -7,6 +7,31 @@
         <title>Resume Matcher</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>title</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .container {
+           margin-top: 50px;
+       }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 0;
+            padding: 10px 20px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
     </head>
     <body>
         <div class="container">
@@ -21,12 +46,14 @@
                         <div class="form-group">
                             <label for="Resume">Upload resume</label>
                             <p>Please upload atleast 5 resuem____________________________</p>
+                            <input type="file" form="form-control" id="resumes" name="resumes" multiple required accept=".pdf,.docx,.txt"> 
                         </div>
+                        <button type="submit" class="btn btn-primary">Match Resume</button>
                     </form>
                 </div>
             </div>
         </div>
-       <h1>This is my Job description matching system</h1> 
+      
        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
